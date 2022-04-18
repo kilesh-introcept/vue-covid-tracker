@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+scrollbar::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: #888888;
+  border-radius: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #464646;
+  border-radius: 5px;
+}
+
+
+body{
+  background-color: #eceff5;
+}
+
+.btn {
+  @apply px-5 py-3 shadow-sm transition ease-in-out duration-300 rounded leading-snug whitespace-nowrap text-base font-semibold ;
+}
+
+.btn-icon{
+  @apply  text-white w-7 h-7 text-sm rounded-full shadow bg-gray-400 hover:bg-gray-300
+}
+.btn-primary {
+  @apply  text-white bg-primary-default hover:bg-primary-light;
+}
+
+.btn-danger{
+  @apply text-white bg-red-600 hover:bg-red-500;
+}
+
+.btn-success{
+  @apply text-white bg-green-600 hover:bg-green-500;
+}
+
+
+@tailwind utilities;
+
+
+
