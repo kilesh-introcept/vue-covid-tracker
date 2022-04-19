@@ -7,7 +7,7 @@ import TodoPage from "@/Page/todoPage.vue";
 </script>
 
 <template>
-  <div class="grid gap-2">
+  <div class="grid gap-2 mb-6">
     <PublicNavbar />
     <router-view />
   </div>

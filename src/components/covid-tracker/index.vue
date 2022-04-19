@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-if="loading">Loading...</div>
-    <div v-else>
+    <div v-else class="space-y-4">
       <div class="space-y-4">
         <CovidTrackerCards :datas="this.globalStats" title="Global" />
         <CustomAutoComplete
@@ -17,12 +17,15 @@
 <script>
 import CustomAutoComplete from "@/components/utils/custom-auto-complete.vue";
 import CovidTrackerCards from "./covid-tracker-cards.vue";
+import LineChart from "@/components/charts/LineChart.vue";
 const url = "https://api.covid19api.com/summary";
+
 export default {
   name: "CovidTracker",
   components: {
     CustomAutoComplete,
     CovidTrackerCards,
+    LineChart,
   },
   data() {
     return {
